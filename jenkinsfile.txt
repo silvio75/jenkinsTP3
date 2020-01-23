@@ -1,0 +1,30 @@
+pipeline {
+   agent any
+
+   stages {
+              stage('Build') {
+                 steps {
+                    echo "etape de build"
+                  
+                   bat 'java -version'
+                 }
+              }
+
+            stage('test') {
+             steps {
+                echo "etape de test"
+              
+               
+               }
+             }
+         
+            stage('deploy') {
+             steps {
+                echo "etape de deploiement"
+              
+               
+               }
+            }
+        }
+
+} 
